@@ -41,6 +41,7 @@
             font-family: "Segoe UI", Tahoma, sans-serif;
         }
 
+        /* Signature outer border + 8px corner squares matching the desktop app */
         .app-outer-frame {
             position: relative;
             border: 2px solid #454138;
@@ -60,6 +61,7 @@
         .cs-bl { bottom: -8px; left: -8px; }
         .cs-br { bottom: -8px; right: -8px; }
 
+        /* Inner panel with light border and concentric background circles */
         .app-inner-panel {
             position: relative;
             background-color: #6E695A;
@@ -144,8 +146,8 @@
                 </header>
 
                 <div class="bg-card border border-blight px-3.5 py-2 rounded-sm flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
-                    <span class="text-swarn">● Status: In Active Development</span>
-                    <span class="text-sok">● Access: Selected Testers Only</span>
+                    <span class="text-swarn">● Status: Open Beta (In Development)</span>
+                    <span class="text-sok">● 100% Open Source</span>
                 </div>
 
                 <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
@@ -153,10 +155,19 @@
                         ABOUT LANG!LEY
                     </h2>
                     <p class="text-xs text-tprim leading-relaxed">
-                        <strong>Lang!ley</strong> is a lightweight Windows Application that brings real-time Fortnite Stats, Squad detection, Friendlist tracking, and Media Controls directly to your <strong>Discord Rich Presence</strong>.
+                        <strong>Lang!ley</strong> is a lightweight, <strong>100% Open Source</strong> Windows Application that brings real-time Fortnite Stats, Squad detection, Friendlist tracking, and Media Controls directly to your <strong>Discord Rich Presence</strong>.
+                    </p>
+                </section>
+
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-swarn uppercase tracking-wider">
+                        OPEN BETA &amp; DEVELOPMENT STATUS
+                    </h2>
+                    <p class="text-xs text-tprim leading-relaxed">
+                        <strong>Lang!ley</strong> is now in <strong>Open Beta</strong> and still in active Development. Because we are still working on it and adding new Stuff, some <strong>Bugs or small Issues can still happen</strong> while using the App.
                     </p>
                     <div class="bg-bdark px-3 py-2 rounded-sm border border-swarn/30 text-[11px] text-swarn leading-relaxed">
-                        ⚠ <strong>Development Notice:</strong> Lang!ley is currently in active development. Public Downloads are unavailable and Access is strictly limited to selected Closed-Beta Testers.
+                        ⚠ <strong>Note:</strong> If you find any Bugs or something doesn't work right, keep in mind that Lang!ley is not finished yet and gets regular Updates on GitHub.
                     </div>
                 </section>
 
@@ -193,6 +204,10 @@
                             <span class="font-bold text-tprim">• Smart Auto-Updater &amp; System Tray Mode:</span>
                             <span class="text-tmuted"> Notifies you when a new Patch is available (with Changelog Preview and 1-Click install) and runs quietly in the Windows System Tray with optional Autostart (automatically starts with the PC).</span>
                         </li>
+                        <li>
+                            <span class="font-bold text-tprim">• No Performance Loss</span>
+                            <span class="text-tmuted"> Lang!ley is really lightweight. The highest resource usage of Lang!ley, that we tested was below 50MB RAM.</span>
+                        </li>
                     </ul>
                 </section>
 
@@ -201,6 +216,10 @@
                         SECURITY &amp; PRIVACY INFORMATION
                     </h2>
                     <ul class="space-y-2 text-xs leading-relaxed">
+                        <li>
+                            <span class="font-bold text-sok">• 100% Open Source:</span>
+                            <span class="text-tprim"> Lang!ley is completely Open Source on GitHub. Everyone can look at the Code by themselves to see that nothing shady happens in the Background.</span>
+                        </li>
                         <li>
                             <span class="font-bold text-sok">• Optional Account Linking:</span>
                             <span class="text-tprim"> Linking your Epic Games Account is completely Optional. Lang!ley works right out of the Box using local Game Logs, while linking unlocks Friendlist, Squad Detection, and instant Profile Syncing.</span>
@@ -232,15 +251,16 @@
                         Normally the Rich Prefrence of Fortnite looks really boring on Discord. Thats why we built <strong class="text-tprim">Lang!ley</strong>. <strong class="text-tprim">Lang!ley</strong> shows your Game State, Season Level, Party Size (even with who you play, if you and your Mate use <strong class="text-tprim">Lang!ley</strong>) and <strong class="text-tprim">Lang!ley</strong> even shows the Skin youre using at the Moment.
                     </p>
                     <p class="text-xs text-tmuted leading-relaxed">
-                        We built <strong class="text-tprim">Lang!ley</strong> as a fast, <strong class="text-sok">100% local, Privacy-first Companion</strong> for Peopole who want, that their Discord Rich Prefrence looks a bit nicer. <strong class="text-tprim">Lang!ley</strong> is still in Development to improve Features so we can maybe soon make it Publicly Available.
+                        We built <strong class="text-tprim">Lang!ley</strong> as a fast, <strong class="text-sok">100% local, Open Source &amp; Privacy-first Companion</strong> for Peopole who want, that their Discord Rich Prefrence looks a bit nicer. <strong class="text-tprim">Lang!ley</strong> is now in Open Beta so everyone can try it out while we improve Features and fix Bugs.
                     </p>
                 </section>
 
                 <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-                    <div class="flex-1 bg-bdark text-swarn font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide select-none">
-                        CLOSED BETA // SELECTED TESTERS ONLY
-                    </div>
-                    <a href="https://asukaa.de/langley/LICENSE.html" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/IAsukaaI/langley/releases/tag/v1.0.2" target="_blank" rel="noopener noreferrer"
+                       class="flex-1 bg-bdark hover:bg-card text-sok font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide transition-colors border border-sok/40">
+                        Get Lang!ley on GitHub
+                    </a>
+                    <a href="https://asukaa.de/langley/LICENSE" target="_blank" rel="noopener noreferrer"
                        class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-5 rounded-sm text-center transition-colors border border-bdark">
                         License
                     </a>
