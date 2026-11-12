@@ -41,7 +41,6 @@
             font-family: "Segoe UI", Tahoma, sans-serif;
         }
 
-        /* Signature outer border + 8px corner squares matching the desktop app */
         .app-outer-frame {
             position: relative;
             border: 2px solid #454138;
@@ -61,7 +60,6 @@
         .cs-bl { bottom: -8px; left: -8px; }
         .cs-br { bottom: -8px; right: -8px; }
 
-        /* Inner panel with light border and concentric background circles */
         .app-inner-panel {
             position: relative;
             background-color: #6E695A;
@@ -101,6 +99,13 @@
             left: 50%;
             transform: translate(-50%, -50%);
             pointer-events: none;
+        }
+
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
         }
     </style>
 </head>
@@ -253,6 +258,63 @@
                     <p class="text-xs text-tmuted leading-relaxed">
                         We built <strong class="text-tprim">Lang!ley</strong> as a fast, <strong class="text-sok">100% local, Open Source &amp; Privacy-first Companion</strong> for Peopole who want, that their Discord Rich Prefrence looks a bit nicer. <strong class="text-tprim">Lang!ley</strong> is now in Open Beta so everyone can try it out while we improve Features and fix Bugs.
                     </p>
+                </section>
+
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        FAQ (OFTEN ASKED QUESTIONS)
+                    </h2>
+                    <div class="space-y-2 text-xs">
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Is Lang!ley safe to use?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Yes, 100%. Lang!ley only uses local Game Logs on your PC and talks directly to the Official Epic Games and Discord Servers. Because the Code is completely Open Source on GitHub, everyone can check it by themselves.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>How much does Lang!ley cost?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Nothing. Lang!ley is 100% free for everyone and there are no Paid Features or Subscriptions.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Can I get banned in Fortnite for using Lang!ley?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                No. Lang!ley does not touch or change any Fortnite Game Files and doesn't inject anything into the Game. It just runs in the Background and reads the normal Log File that Fortnite creates on your PC.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Does Lang!ley lower my FPS?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                No. Lang!ley runs quietly in the Background and uses under 50MB RAM, so you won't get any FPS Drops while playing.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>How do I update Lang!ley?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Lang!ley has a built-in Auto-Updater. When a new Update is out, the App shows a small Update Button at the Top so you can install it with 1 Click.
+                            </p>
+                        </details>
+                    </div>
                 </section>
 
                 <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
