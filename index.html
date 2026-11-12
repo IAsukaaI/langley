@@ -41,7 +41,6 @@
             font-family: "Segoe UI", Tahoma, sans-serif;
         }
 
-        /* Signature outer border + 8px corner squares matching the desktop app */
         .app-outer-frame {
             position: relative;
             border: 2px solid #454138;
@@ -61,7 +60,6 @@
         .cs-bl { bottom: -8px; left: -8px; }
         .cs-br { bottom: -8px; right: -8px; }
 
-        /* Inner panel with light border and concentric background circles */
         .app-inner-panel {
             position: relative;
             background-color: #6E695A;
@@ -106,28 +104,21 @@
 </head>
 <body class="min-h-screen flex items-center justify-center p-3 sm:p-6">
 
-    <!-- Main Centered Desktop-Style Window Container -->
     <main class="w-full max-w-[580px] app-outer-frame rounded-sm my-auto">
-        <!-- 8px Outer Corner Squares -->
         <div class="corner-square cs-tl"></div>
         <div class="corner-square cs-tr"></div>
         <div class="corner-square cs-bl"></div>
         <div class="corner-square cs-br"></div>
 
-        <!-- Inner Panel -->
         <div class="app-inner-panel p-3.5 sm:p-5">
-            <!-- Concentric Background Circles -->
             <div class="bg-circle-1"></div>
             <div class="bg-circle-2"></div>
             <div class="bg-circle-3"></div>
 
-            <!-- Static Content Wrapper -->
             <div class="relative z-10 space-y-3">
 
-                <!-- 1. HEADER BAR -->
                 <header class="bg-bdark px-3.5 py-2.5 rounded-sm flex items-center justify-between gap-2">
                     <div class="flex items-center gap-2.5 min-w-0">
-                        <!-- Custom SVG Lunar Tear Icon (matching Asukaa.de.png) -->
                         <svg class="w-6 h-6 shrink-0 border border-blight/60 bg-outer p-0.5 rounded-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="4" y="4" width="56" height="56" fill="#6E695A" stroke="#454138" stroke-width="2"/>
                             <circle cx="32" cy="32" r="22" fill="#7E7869"/>
@@ -152,13 +143,11 @@
                     </a>
                 </header>
 
-                <!-- 2. STATUS BAR -->
                 <div class="bg-card border border-blight px-3.5 py-2 rounded-sm flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
                     <span class="text-swarn">● Status: In Active Development</span>
                     <span class="text-sok">● Access: Selected Testers Only</span>
                 </div>
 
-                <!-- 3. WHAT IS LANG!LEY? -->
                 <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
                     <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
                         ABOUT LANG!LEY
@@ -171,7 +160,6 @@
                     </div>
                 </section>
 
-                <!-- 4. CORE & NEW FEATURES -->
                 <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
                     <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
                         FEATURES &amp; CAPABILITIES
@@ -208,7 +196,6 @@
                     </ul>
                 </section>
 
-                <!-- 5. SECURITY & PRIVACY INFORMATION -->
                 <section class="bg-card border border-blight p-3.5 sm:p-4 rounded-sm space-y-2.5">
                     <h2 class="text-[11px] font-bold text-swarn uppercase tracking-wider">
                         SECURITY &amp; PRIVACY INFORMATION
@@ -237,7 +224,6 @@
                     </ul>
                 </section>
 
-                <!-- 6. WHY DID WE BUILD LANG!LEY? -->
                 <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
                     <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
                         WHY DID WE BUILD LANG!LEY?
@@ -250,18 +236,20 @@
                     </p>
                 </section>
 
-                <!-- 7. BOTTOM BAR -->
                 <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
                     <div class="flex-1 bg-bdark text-swarn font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide select-none">
                         CLOSED BETA // SELECTED TESTERS ONLY
                     </div>
+                    <a href="https://asukaa.de/langley/LICENSE" target="_blank" rel="noopener noreferrer"
+                       class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-5 rounded-sm text-center transition-colors border border-bdark">
+                        License
+                    </a>
                     <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer"
                        class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-5 rounded-sm text-center transition-colors border border-bdark">
                         Visit asukaa.de
                     </a>
                 </div>
 
-                <!-- 8. COPYRIGHT & DISCLAIMER FOOTER -->
                 <footer class="pt-2 border-t border-bdark/60 flex flex-col sm:flex-row items-center justify-between gap-1 text-[11px] text-tmuted">
                     <span>© 2026 Lang!ley</span>
                     <span>Lang!ley is not affiliated with Epic Games or Discord</span>
