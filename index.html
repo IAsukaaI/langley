@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lang!ley | Fortnite Stats Discord RPC</title>
+    <title>Project Lang!ley</title>
+    <link rel="icon" type="image/png" href="assets/Icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,7 +23,7 @@
                         serr: '#D6A79A'
                     },
                     fontFamily: {
-                        sans: ['"Segoe UI"', 'system-ui', '-apple-system', 'sans-serif']
+                        sans: ['"Segoe UI"', 'Tahoma', 'sans-serif']
                     }
                 }
             }
@@ -31,17 +32,22 @@
     <style>
         body {
             background-color: #B2AB99;
+            background-image: url('assets/Background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #F0EAD8;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: "Segoe UI", Tahoma, sans-serif;
         }
 
-        /* Outer border + 8px corner squares matching the Tkinter Canvas */
+        /* Signature outer border + 8px corner squares matching the desktop app */
         .app-outer-frame {
             position: relative;
             border: 2px solid #454138;
             padding: 6px;
             background-color: #B2AB99;
-            box-shadow: 0 14px 32px rgba(69, 65, 56, 0.28);
+            box-shadow: 0 16px 36px rgba(69, 65, 56, 0.32);
         }
 
         .corner-square {
@@ -65,8 +71,8 @@
 
         .bg-circle-1 {
             position: absolute;
-            width: 340px;
-            height: 340px;
+            width: 360px;
+            height: 360px;
             border-radius: 9999px;
             background-color: #757061;
             top: 50%;
@@ -76,8 +82,8 @@
         }
         .bg-circle-2 {
             position: absolute;
-            width: 245px;
-            height: 245px;
+            width: 260px;
+            height: 260px;
             border-radius: 9999px;
             background-color: #7E7869;
             top: 50%;
@@ -87,8 +93,8 @@
         }
         .bg-circle-3 {
             position: absolute;
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 9999px;
             background-color: #878172;
             top: 50%;
@@ -98,128 +104,167 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-4 sm:p-8">
+<body class="min-h-screen flex items-center justify-center p-3 sm:p-6">
 
-    <!-- Main Centered App Window Container -->
+    <!-- Main Centered Desktop-Style Window Container -->
     <main class="w-full max-w-[580px] app-outer-frame rounded-sm my-auto">
-        <!-- 8px Corner Squares -->
+        <!-- 8px Outer Corner Squares -->
         <div class="corner-square cs-tl"></div>
         <div class="corner-square cs-tr"></div>
         <div class="corner-square cs-bl"></div>
         <div class="corner-square cs-br"></div>
 
         <!-- Inner Panel -->
-        <div class="app-inner-panel p-4 sm:p-5">
+        <div class="app-inner-panel p-3.5 sm:p-5">
             <!-- Concentric Background Circles -->
             <div class="bg-circle-1"></div>
             <div class="bg-circle-2"></div>
             <div class="bg-circle-3"></div>
 
-            <!-- Content Wrapper -->
-            <div class="relative z-10 space-y-3.5">
+            <!-- Static Content Wrapper -->
+            <div class="relative z-10 space-y-3">
 
-                <!-- 1. Header Bar -->
+                <!-- 1. HEADER BAR -->
                 <header class="bg-bdark px-3.5 py-2.5 rounded-sm flex items-center justify-between gap-2">
-                    <h1 class="text-xs sm:text-sm font-bold text-tprim tracking-wide">
-                        Lang!ley | Fortnite Stats Discord RPC
-                    </h1>
-                    <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer" 
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <!-- Custom SVG Lunar Tear Icon (matching Asukaa.de.png) -->
+                        <svg class="w-6 h-6 shrink-0 border border-blight/60 bg-outer p-0.5 rounded-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="56" height="56" fill="#6E695A" stroke="#454138" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="22" fill="#7E7869"/>
+                            <circle cx="32" cy="32" r="15" fill="#8E8777"/>
+                            <path d="M32 32 C22 22, 16 14, 18 14 C24 15, 30 22, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C34 20, 44 16, 46 18 C44 25, 38 29, 32 32 Z" fill="#DCD6C4"/>
+                            <path d="M32 32 C42 32, 50 38, 49 41 C42 41, 36 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C36 42, 32 50, 29 50 C26 44, 28 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C22 36, 14 33, 14 29 C19 26, 26 28, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M27 36 L14 50" stroke="#DCD6C4" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="3" fill="#454138"/>
+                            <circle cx="44" cy="12" r="1.5" fill="#F0EAD8"/>
+                            <circle cx="49" cy="24" r="1.2" fill="#F0EAD8"/>
+                        </svg>
+                        <h1 class="text-xs sm:text-sm font-bold text-tprim tracking-wide truncate">
+                            Lang!ley | Fortnite Stats Discord RPC
+                        </h1>
+                    </div>
+                    <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer"
                        class="text-xs text-tmuted underline hover:text-tprim transition-colors shrink-0">
                         asukaa.de ↗
                     </a>
                 </header>
 
-                <!-- 2. Status Bar -->
+                <!-- 2. STATUS BAR -->
                 <div class="bg-card border border-blight px-3.5 py-2 rounded-sm flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
-                    <span class="text-swarn">● Status: In Development</span>
+                    <span class="text-swarn">● Status: In Active Development</span>
                     <span class="text-sok">● Access: Selected Testers Only</span>
                 </div>
 
-                <!-- 3. About Lang!ley & Closed Beta Notice -->
-                <section class="bg-card border-2 border-bdark p-4 rounded-sm space-y-2">
-                    <div class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
-                        ABOUT LANG!LEY // CLOSED BETA
-                    </div>
-                    <p class="text-xs sm:text-sm text-tprim leading-relaxed">
-                        <strong>Lang!ley</strong> is a lightweight Windows background application that connects your live Fortnite session to <strong>Discord Rich Presence</strong>—displaying your equipped locker outfit, Season Level, active playlist, and party squad in real time.
+                <!-- 3. WHAT IS LANG!LEY? -->
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        ABOUT LANG!LEY
+                    </h2>
+                    <p class="text-xs text-tprim leading-relaxed">
+                        <strong>Lang!ley</strong> is a lightweight Windows Application that brings real-time Fortnite Stats, Squad detection, Friendlist tracking, and Media Controls directly to your <strong>Discord Rich Presence</strong>.
                     </p>
-                    <p class="text-xs text-swarn bg-bdark/80 border border-swarn/30 px-3 py-2 rounded-sm leading-relaxed">
-                        ⚠ <strong>Development Notice:</strong> Lang!ley is currently still in active development. Public downloads are disabled and only selected testers receive access to the installer.
-                    </p>
-                </section>
-
-                <!-- 4. Core Features -->
-                <section class="bg-card border-2 border-bdark p-4 rounded-sm space-y-2.5">
-                    <div class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
-                        CORE FEATURES
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-                        <div class="bg-bdark/60 p-2.5 rounded-sm border border-bdark">
-                            <div class="font-bold text-tprim">Live Locker Outfit (PNG)</div>
-                            <div class="text-tmuted mt-0.5 leading-snug">
-                                Automatically resolves and displays your equipped Fortnite skin icon in Discord.
-                            </div>
-                        </div>
-                        <div class="bg-bdark/60 p-2.5 rounded-sm border border-bdark">
-                            <div class="font-bold text-sok">Lang!ley Squad Detection</div>
-                            <div class="text-tmuted mt-0.5 leading-snug">
-                                Shows live party size (e.g. 2/4) and highlights teammates who also use Lang!ley.
-                            </div>
-                        </div>
-                        <div class="bg-bdark/60 p-2.5 rounded-sm border border-bdark">
-                            <div class="font-bold text-tprim">Season Level & Game Mode</div>
-                            <div class="text-tmuted mt-0.5 leading-snug">
-                                Displays your Epic username, Season Level, and current playlist in Lobby or Match.
-                            </div>
-                        </div>
-                        <div class="bg-bdark/60 p-2.5 rounded-sm border border-bdark">
-                            <div class="font-bold text-tprim">Lightweight System Tray App</div>
-                            <div class="text-tmuted mt-0.5 leading-snug">
-                                Runs silently in the background with a live session timer and auto-hide when offline.
-                            </div>
-                        </div>
+                    <div class="bg-bdark px-3 py-2 rounded-sm border border-swarn/30 text-[11px] text-swarn leading-relaxed">
+                        ⚠ <strong>Development Notice:</strong> Lang!ley is currently in active development. Public Downloads are unavailable and Access is strictly limited to selected Closed-Beta Testers.
                     </div>
                 </section>
 
-                <!-- 5. Data Storage & Privacy -->
-                <section class="bg-card border-2 border-bdark p-4 rounded-sm space-y-2">
-                    <div class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
-                        DATA STORAGE & PRIVACY
-                    </div>
-                    <ul class="space-y-1.5 text-xs text-tprim leading-relaxed">
+                <!-- 4. CORE & NEW FEATURES -->
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        FEATURES &amp; CAPABILITIES
+                    </h2>
+                    <ul class="space-y-2 text-xs leading-relaxed">
                         <li>
-                            <span class="text-sok font-bold">• 100% Local Storage on Your PC:</span>
-                            <span class="text-tmuted"> Your authentication token and settings are stored exclusively on your own computer in your personal Windows Registry (<code class="text-tprim">HKEY_CURRENT_USER\Software\LangleyFortniteRPC</code>).</span>
+                            <span class="font-bold text-tprim">• Real-Time Outfit &amp; Locker Sync:</span>
+                            <span class="text-tmuted"> Instantly detects your equipped Fortnite Skin and updates your Discord Rich Presence with the exact Skin Icon.</span>
                         </li>
                         <li>
-                            <span class="text-sok font-bold">• Zero External Servers:</span>
-                            <span class="text-tmuted"> Lang!ley has no backend server and never collects, uploads, or shares your data. All requests go directly between your PC and official Epic Games servers (<code class="text-tprim">*.epicgames.com</code>).</span>
+                            <span class="font-bold text-tprim">• Live Match State, Game Mode &amp; Session Timer:</span>
+                            <span class="text-tmuted"> Shows whether you are in the Lobby or In Match, your active Playlist (Battle Royale, Zero Build, Ranked, Reload, OG, Creative, etc.), and your elapsed session Time.</span>
                         </li>
                         <li>
-                            <span class="text-sok font-bold">• Official Browser Login:</span>
-                            <span class="text-tmuted"> You sign in directly on the official Epic Games website in your browser. Lang!ley never sees your password or 2FA codes.</span>
+                            <span class="font-bold text-tprim">• Season Level &amp; Party Size Tracking:</span>
+                            <span class="text-tmuted"> Displays your current Battle Pass Season Level and live Party Status (Solo or Party X/4).</span>
                         </li>
                         <li>
-                            <span class="text-sok font-bold">• Instant Unlink:</span>
-                            <span class="text-tmuted"> You can unlink your account at any time with a single click, which immediately deletes the local token.</span>
+                            <span class="font-bold text-sok">• Automatic Lang!ley Squad Detection:</span>
+                            <span class="text-tmuted"> Detects Teammates in your Fortnite Party who also run Lang!ley (<strong class="text-sok">★ Lang!ley Squad</strong>) via Epic Games Party Metadata without any external Servers.</span>
                         </li>
                         <li>
-                            <span class="text-sok font-bold">• Epic not required:</span>
-                            <span class="text-tmuted"> Linking your Epic Games to Lang!ley is fully optional and not required. If you dont feel Safe about it (Some Features do not work then).</span>
+                            <span class="font-bold text-sok">• Fortnite Friendlist &amp; Squad Highlighter:</span>
+                            <span class="text-tmuted"> Displays your Epic Games Friendlist with online Status, current Party Members, and highlights active <strong class="text-sok">★ Lang!ley Squad</strong> Mates.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-swarn">• Music Control:</span>
+                            <span class="text-tmuted"> Built-in playback Controls (Prev, Play/Pause, Next) supporting Spotify, YouTube Music, Amazon Music, Apple Music, and Browser Players — with optional live Song Display inside your Discord RPC Status.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-tprim">• Smart Auto-Updater &amp; System Tray Mode:</span>
+                            <span class="text-tmuted"> Notifies you when a new Patch is available (with Changelog Preview and 1-Click install) and runs quietly in the Windows System Tray with optional Autostart (automatically starts with the PC).</span>
                         </li>
                     </ul>
                 </section>
 
-                <!-- 6. Bottom Action Bar -->
-                <footer class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-                    <button disabled 
-                            class="flex-1 bg-bdark text-swarn font-bold text-xs py-2.5 px-4 rounded-sm opacity-90 cursor-not-allowed text-center">
-                        🔒 Closed Beta (Selected Testers Only)
-                    </button>
-                    <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer" 
+                <!-- 5. SECURITY & PRIVACY INFORMATION -->
+                <section class="bg-card border border-blight p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-swarn uppercase tracking-wider">
+                        SECURITY &amp; PRIVACY INFORMATION
+                    </h2>
+                    <ul class="space-y-2 text-xs leading-relaxed">
+                        <li>
+                            <span class="font-bold text-sok">• Optional Account Linking:</span>
+                            <span class="text-tprim"> Linking your Epic Games Account is completely Optional. Lang!ley works right out of the Box using local Game Logs, while linking unlocks Friendlist, Squad Detection, and instant Profile Syncing.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• 100% Local Storage on Your PC:</span>
+                            <span class="text-tprim"> All your Data is stored on your PC, and never gets shared with Others (even the Lang!ley Team can't see anything of you)</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Zero External Servers:</span>
+                            <span class="text-tprim"> Lang!ley has no backend Server and never collects, tracks, or shares your Personal Data. All requests go directly between your PC and the Official Epic Games Servers.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Official Browser Login:</span>
+                            <span class="text-tprim"> If you decide, to connect your Epic Games Account, you sign in directly on the Official Epic Games Website in your Browser. Lang!ley never sees your Password or 2FA Codes.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Instant Unlink:</span>
+                            <span class="text-tprim"> You can unlink your Epic Account and remove local Tokens at any time with a single Click.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 6. WHY DID WE BUILD LANG!LEY? -->
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        WHY DID WE BUILD LANG!LEY?
+                    </h2>
+                    <p class="text-xs text-tprim leading-relaxed">
+                        Normally the Rich Prefrence of Fortnite looks really boring on Discord. Thats why we built <strong class="text-tprim">Lang!ley</strong>. <strong class="text-tprim">Lang!ley</strong> shows your Game State, Season Level, Party Size (even with who you play, if you and your Mate use <strong class="text-tprim">Lang!ley</strong>) and <strong class="text-tprim">Lang!ley</strong> even shows the Skin youre using at the Moment.
+                    </p>
+                    <p class="text-xs text-tmuted leading-relaxed">
+                        We built <strong class="text-tprim">Lang!ley</strong> as a fast, <strong class="text-sok">100% local, Privacy-first Companion</strong> for Peopole who want, that their Discord Rich Prefrence looks a bit nicer. <strong class="text-tprim">Lang!ley</strong> is still in Development to improve Features so we can maybe soon make it Publicly Available.
+                    </p>
+                </section>
+
+                <!-- 7. BOTTOM BAR -->
+                <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                    <div class="flex-1 bg-bdark text-swarn font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide select-none">
+                        CLOSED BETA // SELECTED TESTERS ONLY
+                    </div>
+                    <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer"
                        class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-5 rounded-sm text-center transition-colors border border-bdark">
                         Visit asukaa.de
                     </a>
+                </div>
+
+                <!-- 8. COPYRIGHT & DISCLAIMER FOOTER -->
+                <footer class="pt-2 border-t border-bdark/60 flex flex-col sm:flex-row items-center justify-between gap-1 text-[11px] text-tmuted">
+                    <span>© 2026 Lang!ley</span>
+                    <span>Lang!ley is not affiliated with Epic Games or Discord</span>
                 </footer>
 
             </div>
