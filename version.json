@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "download_url": "https://asukaa.de/langley/Lang!ley_installer/Lang!ley_installer.exe",
-  "changelog": "• Added Steam, Roblox and Xbox Support\n"
+  "changelog": "• Added Riot Games, Battle.net, EA App, Ubisoft Connect & GOG Galaxy support\n• Added detection for 5 Minecraft clients (Lunar, Badlion, Feather, LabyMod & Prism/Vanilla)\n• Added Medal.tv RPC Priority Guard to keep your game status on top in Discord\n• Added unified GAME HUB & dedicated SETTINGS tabs with helpful hover tooltips\n• Expanded FRIENDS tab across all platforms & fixed Xbox friends and UI clipping bugs"
 }
