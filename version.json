@@ -1,5 +1,5 @@
 {
   "version": "1.0.4",
   "download_url": "https://asukaa.de/langley/Lang!ley_installer/Lang!ley_installer.exe",
-  "changelog": "• Added Riot Games, Battle.net, EA App, Ubisoft Connect & GOG Galaxy support\n• Added detection for 5 Minecraft clients (Lunar, Badlion, Feather, LabyMod & Prism/Vanilla)\n• Added Medal.tv RPC Priority Guard to keep your game status on top in Discord\n• Added unified GAME HUB & dedicated SETTINGS tabs with helpful hover tooltips\n• Expanded FRIENDS tab across all platforms & fixed Xbox friends and UI clipping bugs"
+  "changelog": "• Added the new Lang!ley Slogan: Lang!ley - Play Everythig. Show Everything.\n• Added full Epic Games Store & Launcher support.\n• Added all HoYoPlay, and some other Gacha Games.\n• Lang!ley now gets prioritized above all other Discord RPCs.\n• Game Logos got fixed\n• Added Custom External Games and Apps to Lang!ley. So you can also show (currently) unsupported Games (or even Apps) in your Discord RPC.\n• Fixed Xbox Version of Fortnite conflicting with the Fortnite RPC and not showing up.\n• Fixed that Launchers in tray (like Roblox, Lunar Client etc. get shown.\n• Fixed a Bug that you could only Scroll when hovering on the Scrollbar."
 }
