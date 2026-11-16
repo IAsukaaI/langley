@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "download_url": "https://asukaa.de/langley/Lang!ley_installer/Lang!ley_installer.exe",
-  "changelog": "• Added the new Lang!ley Slogan: Lang!ley - Play Everythig. Show Everything.\n• Added full Epic Games Store & Launcher support.\n• Added all HoYoPlay, and some other Gacha Games.\n• Lang!ley now gets prioritized above all other Discord RPCs.\n• Game Logos got fixed\n• Added Custom External Games and Apps to Lang!ley. So you can also show (currently) unsupported Games (or even Apps) in your Discord RPC.\n• Fixed Xbox Version of Fortnite conflicting with the Fortnite RPC and not showing up.\n• Fixed that Launchers in tray (like Roblox, Lunar Client etc. get shown.\n• Fixed a Bug that you could only Scroll when hovering on the Scrollbar."
+  "changelog": "• Minor Bug Fixes."
 }
