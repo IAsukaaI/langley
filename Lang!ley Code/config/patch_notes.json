@@ -1,0 +1,79 @@
+{
+  "current_version": "1.0.6",
+  "releases": [
+    {
+      "version": "1.0.6",
+      "date": "2026-11-16",
+      "title": "Major and Minor Bug Fixes",
+      "highlights": [
+        "Fixed Major and Small Bugs."
+      ]
+    },
+    {
+      "version": "1.0.5",
+      "date": "2026-11-15",
+      "title": "Gacha Games Support and Major Bug Fixes",
+      "highlights": [
+        "Added the new Lang!ley Slogan: Lang!ley - Play Everythig. Show Everything.",
+        "Added full Epic Games Store & Launcher support.",
+        "Added all HoYoPlay, and some other Gacha Games.",
+        "Lang!ley now gets prioritized above all other Discord RPCs.",
+        "Game Logos got fixed.",
+        "Added Custom External Games and Apps to Lang!ley. So you can also show (currently) unsupported Games (or even Apps) in your Discord RPC.",
+        "Fixed Xbox Version of Fortnite conflicting with the Fortnite RPC and not showing up.",
+        "Fixed that Launchers in tray (like Roblox, Lunar Client etc. get shown",
+        "Fixed a Bug that you could only Scroll when hovering on the Scrollbar."
+      ]
+    },
+    {
+      "version": "1.0.4",
+      "date": "2026-11-14",
+      "title": "Battle.net and Minecraft Support",
+      "highlights": [
+        "Added Blizzard Battle.net Support.",
+        "Added Minecraft (Vanilla and Client) Support.",
+        "Added a feature that Lang!ley shows up on top of Medal.tv.",
+        "Fixed some minor Bugs."
+      ]
+    },
+    {
+      "version": "1.0.3",
+      "date": "2026-11-13",
+      "title": "Riot Games, EA, Ubisoft, and GOG Galaxy Support",
+      "highlights": [
+        "Added native detectors Riot Games, EA App, Ubisoft Connect, and GOG Galaxy Support.",
+        "Added GAME HUB.",
+        "Added Platform Friend Lists."
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "date": "2026-11-11",
+      "title": "XBOX and Roblox Support",
+      "highlights": [
+        "Added Xbox Support.",
+        "Added Roblox Support.",
+        "Minor Bug fixes."
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "date": "2026-11-10",
+      "title": "Steam Support and Music Controller",
+      "highlights": [
+        "Added Steam Support.",
+        "Added CS2 and DOTA 2 live Stats.",
+        "Added Music Controller."
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-11-09",
+      "title": "Initial Release — Fortnite Rich Presence",
+      "highlights": [
+        "Added Fortnite Discord RPC with Live Stats.",
+        "Added Live equipped outfit icon, Season Level, playlist mode, and Lang!ley Squad detection to Fortnite RPC."
+      ]
+    }
+  ]
+}
