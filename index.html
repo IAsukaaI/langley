@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lang!ley | Play Everything. Show Everything.</title>
-    <link rel="icon" type="image/png" href="https://asukaa.de/langley/assets/Icon.png">
+    <title>Project Lang!ley | Play Everything. Show Everything.</title>
+    <link rel="icon" type="image/png" href="assets/Icon.png">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asukaa.de/langley/">
     <meta property="og:title" content="Lang!ley | Play Everything. Show Everything.">
-    <meta property="og:description" content="A lightweight, 100% open-source Windows gaming companion that upgrades your Discord Rich Presence across 99% of your Games.">
+    <meta property="og:description" content="Lang!ley | Play Everything. Show Everything.">
     <meta property="og:image" content="https://asukaa.de/langley/assets/Banner.png">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://asukaa.de/langley/">
-    <meta name="twitter:title" content="Lang!ley~ | Play Everything. Show Everything.">
-    <meta name="twitter:description" content="A lightweight, 100% open-source Windows gaming companion that upgrades your Discord Rich Presence across 99% of your Games.">
-    <meta name="twitter:image" content="https://asukaa.de/langley/assets/Banner.png">
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -139,7 +133,20 @@
 
                 <header class="bg-bdark px-3.5 py-2.5 rounded-sm flex items-center justify-between gap-2">
                     <div class="flex items-center gap-2.5 min-w-0">
-                        <img src="https://asukaa.de/langley/assets/Icon.png" alt="Lang!ley Logo" class="w-6 h-6 shrink-0 border border-blight/60 bg-outer p-0.5 rounded-sm object-cover">
+                        <svg class="w-6 h-6 shrink-0 border border-blight/60 bg-outer p-0.5 rounded-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="56" height="56" fill="#6E695A" stroke="#454138" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="22" fill="#7E7869"/>
+                            <circle cx="32" cy="32" r="15" fill="#8E8777"/>
+                            <path d="M32 32 C22 22, 16 14, 18 14 C24 15, 30 22, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C34 20, 44 16, 46 18 C44 25, 38 29, 32 32 Z" fill="#DCD6C4"/>
+                            <path d="M32 32 C42 32, 50 38, 49 41 C42 41, 36 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C36 42, 32 50, 29 50 C26 44, 28 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C22 36, 14 33, 14 29 C19 26, 26 28, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M27 36 L14 50" stroke="#DCD6C4" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="3" fill="#454138"/>
+                            <circle cx="44" cy="12" r="1.5" fill="#F0EAD8"/>
+                            <circle cx="49" cy="24" r="1.2" fill="#F0EAD8"/>
+                        </svg>
                         <h1 class="text-xs sm:text-sm font-bold text-tprim tracking-wide truncate">
                             Lang!ley | Play Everything. Show Everything.
                         </h1>
@@ -160,7 +167,7 @@
                         ABOUT LANG!LEY
                     </h2>
                     <p class="text-xs text-tprim leading-relaxed">
-                        <strong>Lang!ley~</strong> is a lightweight, modular, <strong>100% Open Source</strong> Windows Gaming Companion that brings real-time <strong>Fortnite</strong> Stats, <strong>11 HoYoPlay &amp; Gacha Games</strong>, <strong>5 Minecraft Clients</strong>, major PC Launchers, <strong>Steam</strong>, <strong>Roblox</strong>, <strong>Xbox</strong>, and <strong>Custom .exe Apps</strong> directly to your <strong>Discord Rich Presence</strong>.
+                        <strong>Lang!ley</strong> is a lightweight, <strong>100% Open Source</strong> Windows Application that brings better looking, real-time, Cross-Platform Friendlists, and Media Controls directly to your <strong>Discord Rich Presence</strong>.
                     </p>
                 </section>
 
@@ -169,8 +176,11 @@
                         OPEN BETA &amp; DEVELOPMENT STATUS
                     </h2>
                     <p class="text-xs text-tprim leading-relaxed">
-                        <strong>Lang!ley</strong> is currently in <strong>Open Beta</strong> and in active Development. Regular updates are delivered via its built-in Auto-Updater and on GitHub.
+                        <strong>Lang!ley</strong> is currently in <strong>Open Beta</strong> and in active Development. Because we are constantly expanding Platform Support and adding new Features, some <strong>Bugs or small Issues can still happen</strong> while using the App.
                     </p>
+                    <div class="bg-bdark px-3 py-2 rounded-sm border border-swarn/30 text-[11px] text-swarn leading-relaxed">
+                        ⚠ <strong>Note:</strong> If you find any Bugs or something doesn't work right, keep in mind that Lang!ley is still evolving and receives regular Updates.
+                    </div>
                 </section>
 
                 <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
@@ -179,36 +189,36 @@
                     </h2>
                     <ul class="space-y-2 text-xs leading-relaxed">
                         <li>
-                            <span class="font-bold text-tprim">• Fortnite Real-Time Stats:</span>
-                            <span class="text-tmuted"> Detects equipped skin, mode, level, and squad in real-time across Epic Games and Xbox PC.</span>
+                            <span class="font-bold text-tprim">• Fortnite Real-Time Outfit, Match State &amp; Level Sync:</span>
+                            <span class="text-tmuted"> Instantly detects your equipped Fortnite Skin (with exact Skin Icon), Lobby/In-Match State, active Playlist, Season Level, Party Size, and elapsed Session Time.</span>
                         </li>
                         <li>
-                            <span class="font-bold text-sok">• 11 Gacha Games (100% Auto-Sync):</span>
-                            <span class="text-tmuted"> Automatic level (AR/TL/IK/UL), region, and character sync for Genshin, Star Rail, ZZZ, WuWa, NIKKE, and more.</span>
+                            <span class="font-bold text-sok">• Automatic Lang!ley Squad Detection:</span>
+                            <span class="text-tmuted"> Detects Teammates in your Fortnite Party who also run Lang!ley (<strong class="text-sok">★ Lang!ley Squad</strong>) via Epic Games Party Metadata without any external Servers.</span>
                         </li>
                         <li>
-                            <span class="font-bold text-tprim">• Browser Login &amp; Auto-Sync:</span>
-                            <span class="text-tmuted"> Effortless 1-click account linking for all platforms, Minecraft, and Gacha portals via local browser callback.</span>
+                            <span class="font-bold text-tprim">• Major Minecraft Clients Support:</span>
+                            <span class="text-tmuted"> Automatically detects <strong>Lunar Client</strong>, <strong>Badlion Client</strong>, <strong>Feather Client</strong>, <strong>LabyMod 4</strong>, <strong>Prism Launcher</strong>, </strong>Vanilla Java &amp; Bedrock</strong> including your active Minecraft Version and World/Multiplayer Server State.</span>
                         </li>
                         <li>
-                            <span class="font-bold text-swarn">• Universal Discord Priority Guard:</span>
-                            <span class="text-tmuted"> Periodically locks Lang!ley at slot #1 on Discord, overriding background overlays like Medal.tv and Overwolf.</span>
+                            <span class="font-bold text-swarn">• Discord #1 Priority Guard:</span>
+                            <span class="text-tmuted"> Prevents other Apps from hijacking or overwriting your Discord Rich Presence.</span>
                         </li>
                         <li>
-                            <span class="font-bold text-tprim">• 5 Major Minecraft Clients:</span>
-                            <span class="text-tmuted"> Automatic detection for Lunar, Badlion, Feather, LabyMod, and Prism/Vanilla with active versions and servers.</span>
+                            <span class="font-bold text-tprim">• Unified Game Hub &amp; Live CS2 / Dota 2 GSI Stats:</span>
+                            <span class="text-tmuted"> Browse your installed Steam, Xbox Game Pass, and Launcher Libraries in one unified Tab, Launch or Close Steam Games with 1 Click, and show live Match Stats (Map, Score, K/D/A) in Counter-Strike 2 and Dota 2.</span>
                         </li>
                         <li>
-                            <span class="font-bold text-tprim">• Major PC Launchers &amp; Steam:</span>
-                            <span class="text-tmuted"> Full support for Riot Games, Battle.net, EA App, Ubisoft, GOG, Roblox, Xbox, and live CS2/Dota 2 stats.</span>
-                        </li>
-                        <li>
-                            <span class="font-bold text-sok">• Custom External .exe Support:</span>
-                            <span class="text-tmuted"> Easily add any custom game or application with a custom title, status text, and icon.</span>
+                            <span class="font-bold text-sok">• Cross-Platform Friends Tab:</span>
+                            <span class="text-tmuted"> Check Friends &amp; Statuses across Epic, Steam, Roblox, Xbox Live, Discord, Riot Games, EA, Ubisoft, GOG, and Battle.net.</span>
                         </li>
                         <li>
                             <span class="font-bold text-swarn">• Media &amp; Spotify Controller:</span>
-                            <span class="text-tmuted"> Built-in playback controls with optional live song display across all games.</span>
+                            <span class="text-tmuted"> Built-in playback Controls supporting Spotify, YouTube Music, Amazon Music, Apple Music, and Browser Players with optional live Song Display inside your Discord Status across all Games.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-tprim">• Ultra-Low Resource Usage (&lt;50MB RAM):</span>
+                            <span class="text-tmuted"> Powered by a shared, TTL-cached OS Process &amp; Window Scanner so all Detectors share a single lightweight scan per cycle with zero FPS Drops.</span>
                         </li>
                     </ul>
                 </section>
@@ -219,14 +229,133 @@
                     </h2>
                     <ul class="space-y-2 text-xs leading-relaxed">
                         <li>
-                            <span class="font-bold text-sok">• 100% Open Source &amp; Local:</span>
-                            <span class="text-tprim"> Code is fully open source on GitHub. All personal settings and tokens stay isolated locally in <code>%APPDATA%\Langley\</code> with zero external backend servers.</span>
+                            <span class="font-bold text-sok">• 100% Open Source:</span>
+                            <span class="text-tprim"> Lang!ley is completely Open Source on GitHub. Everyone can inspect the Code by themselves to verify that nothing shady happens in the Background.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Optional Account Linking:</span>
+                            <span class="text-tprim"> Linking Accounts is completely Optional. Detection for Games works right out of the Box using local Logs, Manifests, and Registry Keys.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• 100% Local Storage on Your PC:</span>
+                            <span class="text-tprim"> All your Settings and Data stay locally on your PC <strong>(...\AppData\Roaming\Lang!ley)</strong> and never get shared with anyone (even the Lang!ley Team cant see anything of you).</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Zero External Backend Servers:</span>
+                            <span class="text-tprim"> Lang!ley has no external Backend Server and never collects, tracks, or sells Personal Data. All requests go directly between your PC and Official Game / Discord APIs.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Official Browser Login &amp; Safe Linking:</span>
+                            <span class="text-tprim"> If you decide to connect your Accounts, you sign in directly on the Official Websites of the Launchers in your Browser. Lang!ley never sees your Passwords or 2FA Codes.</span>
+                        </li>
+                        <li>
+                            <span class="font-bold text-sok">• Instant Unlink &amp; Per-Platform Toggles:</span>
+                            <span class="text-tprim"> You can unlink any Account or toggle individual Games on or off at any time with a single Click.</span>
                         </li>
                     </ul>
                 </section>
 
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        WHY DID WE BUILD LANG!LEY?
+                    </h2>
+                    <p class="text-xs text-tprim leading-relaxed">
+                        Normally, default Discord Rich Presence for Games, looks either super basic or is completely missing. That's why we built <strong class="text-tprim">Lang!ley</strong>. <strong class="text-tprim">Lang!ley</strong> shows your exact Fortnite Skin, Season Level, and Squad, detects which Minecraft Client &amp; Version you are running, upgrades Steam and other Launcher Games with official Cover Art &amp; Live Stats.
+                    </p>
+                    <p class="text-xs text-tmuted leading-relaxed">
+                        We built <strong class="text-tprim">Lang!ley</strong> as a fast, <strong class="text-sok">100% local, Open Source &amp; Privacy-first Companion</strong> so anyone can customize their Discord Rich Presence across all their Games without needing to be a Coder.
+                    </p>
+                </section>
+
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-tmuted uppercase tracking-wider">
+                        FAQ (OFTEN ASKED QUESTIONS)
+                    </h2>
+                    <div class="space-y-2 text-xs">
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Which Games, Launchers &amp; Minecraft Clients are supported?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Lang!ley supports 99% of your Games right out of the box.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Discord Priority Guard work?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                When Medal.tv or other Apps run in the background, they often triy to overwrite your Discord Rich Presence with its own RPC. Lang!ley automatically detects when these Apps are active and re-asserts exclusive Discord IPC priority without touching or closing the processes.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Is Lang!ley safe to use?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Yes, 100%. Lang!ley only reads local Game Logs, Manifests, Window Titles, and Registry Keys on your PC and talks directly to Official Game and Discord APIs. Because the Code is completely Open Source on GitHub, everyone can verify it by themselves.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>How much does Lang!ley cost &amp; how does it earn Money?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Nothing! Lang!ley is a 100% free Passion Project built for the Community. There are no Paid Features, no Ads, no Subscriptions, and we never sell any Data. Because Lang!ley runs 100% locally on your PC without external Backend Servers, it stays free forever.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Can I get banned in any Game for using Lang!ley?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                No. Lang!ley never modifies Game Files, never reads Game Memory, and never injects anything into your Games or Anti-Cheats. It simply runs in the Background and reads standard Process Names, Log Files, Registry States, and official Game State Integrations.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Do I have to link my Accounts or enable every Platform?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                We recommend linking your Accounts <strong>BUT</strong> its 100% Optional.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>Does Lang!ley lower my FPS?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                No. Lang!ley uses a single shared TTL Process &amp; Window Scanner in the Background and stays under 70MB RAM, ensuring zero FPS Drops while gaming.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>How do I update Lang!ley?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                Lang!ley auto updates, When a new Version is released.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+
                 <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-                    <a href="https://github.com/IAsukaaI/langley/releases" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/IAsukaaI/langley/releases/" target="_blank" rel="noopener noreferrer"
                        class="flex-1 bg-bdark hover:bg-card text-sok font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide transition-colors border border-sok/40">
                         Get Lang!ley on GitHub
                     </a>
@@ -240,9 +369,9 @@
                     </a>
                 </div>
 
-                <footer class="pt-2 border-t border-bdark/60 flex flex-col sm:flex-row items-center justify-between gap-1 text-[11px] text-tmuted">
-                    <span>© 2026 Lang!ley • Asukaa | asukaa.de</span>
-                    <span>Not affiliated with Epic, HoYoverse, Valve, Riot, Blizzard, EA, Ubisoft, GOG, Mojang, Roblox, Microsoft, or Discord</span>
+                <footer class="pt-2 border-t border-bdark/60 text-[11px] text-tmuted space-y-1">
+                    <div>© 2026 Lang!ley | Asukaa | asukaa.de</div>
+                    <div class="text-[10px] opacity-80">Not affiliated with Epic, Valve, Riot, Blizzard, EA, Ubisoft, GOG, Mojang, Roblox, Microsoft, or Discord</div>
                 </footer>
 
             </div>
