@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "download_url": "https://asukaa.de/langley/Lang!ley_installer/Lang!ley_installer.exe",
-  "changelog": "• WE ARE ALREADY AWARE OF A CURRENT BUG, WHERE LANG!LEY WANTS TO UPDATE EVERY RESTART. THE LANG!LEY TEAM IS ALREADY FIXING IT \n• FOR NOW: JUST SKIP IT WHEN IT ASKS YOU TO UPDATE!!! \n• Minor Bug Fixes."
+  "changelog": "• Fixed Discord RPC stopping for a split second and getting taken over by other apps/games.\n• Fixed Gacha game icons, accurate game-specific Server Region, and live Gacha Level display (AR, TL, IK Lv., UL, etc.) while playing.\n• Fixed Roblox Home icon not loading.\n• Fixed Lang!ley always trying to update even when already on the latest version.\n• Performance improvements.\n• Fixed Spotify/Music Controller so it works flawlessly now.\n• Fixed a bug where Lang!ley still showed minimized games and launchers.\n• Fixed Lang!ley triggering Priority Locks more often than needed."
 }
