@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support &amp; Help Center | Lang!ley</title>
+    <link rel="icon" type="image/png" href="https://asukaa.de/langley/assets/Icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asukaa.de/langley/support">
+    <meta property="og:title" content="Lang!ley | Support & Help Center">
+    <meta property="og:description" content="Official Discord Support Server, Troubleshooting Guide, and Contact for Lang!ley.">
+    <meta property="og:image" content="https://asukaa.de/langley/assets/Banner.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        outer: '#B2AB99',
+                        panel: '#6E695A',
+                        card: '#5D584B',
+                        bdark: '#454138',
+                        blight: '#DCD6C4',
+                        tprim: '#F0EAD8',
+                        tmuted: '#C2B9A7',
+                        sok: '#C8D6B9',
+                        swarn: '#E6D0A3',
+                        serr: '#D6A79A'
+                    },
+                    fontFamily: {
+                        sans: ['"Segoe UI"', 'Tahoma', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #B2AB99;
+            background-image: url('https://asukaa.de/langley/assets/Background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #F0EAD8;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        .app-outer-frame {
+            position: relative;
+            border: 2px solid #454138;
+            padding: 6px;
+            background-color: #B2AB99;
+            box-shadow: 0 16px 36px rgba(69, 65, 56, 0.32);
+        }
+
+        .corner-square {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #454138;
+        }
+        .cs-tl { top: -8px; left: -8px; }
+        .cs-tr { top: -8px; right: -8px; }
+        .cs-bl { bottom: -8px; left: -8px; }
+        .cs-br { bottom: -8px; right: -8px; }
+
+        .app-inner-panel {
+            position: relative;
+            background-color: #6E695A;
+            border: 2px solid #DCD6C4;
+            overflow: hidden;
+        }
+
+        .bg-circle-1 {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 9999px;
+            background-color: #757061;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .bg-circle-2 {
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border-radius: 9999px;
+            background-color: #7E7869;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .bg-circle-3 {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 9999px;
+            background-color: #878172;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-3 sm:p-6">
+
+    <main class="w-full max-w-[600px] app-outer-frame rounded-sm my-auto">
+        <div class="corner-square cs-tl"></div>
+        <div class="corner-square cs-tr"></div>
+        <div class="corner-square cs-bl"></div>
+        <div class="corner-square cs-br"></div>
+
+        <div class="app-inner-panel p-3.5 sm:p-5">
+            <div class="bg-circle-1"></div>
+            <div class="bg-circle-2"></div>
+            <div class="bg-circle-3"></div>
+
+            <div class="relative z-10 space-y-3">
+
+                <header class="bg-bdark px-3.5 py-2.5 rounded-sm flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <svg class="w-6 h-6 shrink-0 border border-blight/60 bg-outer p-0.5 rounded-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="56" height="56" fill="#6E695A" stroke="#454138" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="22" fill="#7E7869"/>
+                            <circle cx="32" cy="32" r="15" fill="#8E8777"/>
+                            <path d="M32 32 C22 22, 16 14, 18 14 C24 15, 30 22, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C34 20, 44 16, 46 18 C44 25, 38 29, 32 32 Z" fill="#DCD6C4"/>
+                            <path d="M32 32 C42 32, 50 38, 49 41 C42 41, 36 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C36 42, 32 50, 29 50 C26 44, 28 37, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M32 32 C22 36, 14 33, 14 29 C19 26, 26 28, 32 32 Z" fill="#F0EAD8"/>
+                            <path d="M27 36 L14 50" stroke="#DCD6C4" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="3" fill="#454138"/>
+                            <circle cx="44" cy="12" r="1.5" fill="#F0EAD8"/>
+                            <circle cx="49" cy="24" r="1.2" fill="#F0EAD8"/>
+                        </svg>
+                        <h1 class="text-xs sm:text-sm font-bold text-tprim tracking-wide truncate">
+                            Lang!ley | Support &amp; Help Center
+                        </h1>
+                    </div>
+                    <a href="https://asukaa.de" target="_blank" rel="noopener noreferrer"
+                       class="text-xs text-tmuted underline hover:text-tprim transition-colors shrink-0">
+                        asukaa.de ↗
+                    </a>
+                </header>
+
+                <div class="bg-card border border-blight px-3.5 py-2 rounded-sm flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
+                    <span class="text-sok">● Support for GitHub and MS Store Version</span>
+                    <span class="text-swarn">● 100% Open Source</span>
+                </div>
+
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-3">
+                    <h2 class="text-[11px] font-bold text-sok uppercase tracking-wider">
+                        DIRECT SUPPORT &amp; BUG REPORTING
+                    </h2>
+                    <p class="text-xs text-tprim leading-relaxed">
+                        Need help setting up <strong>Lang!ley</strong>, found a bug, or want to request support for a new game? Join our official Discord Support Server for the fastest response, open a GitHub issue, or send us an email:
+                    </p>
+
+                    <!-- Highlighted Discord Banner -->
+                    <a href="https://discord.gg/np4jxeugKM" target="_blank" rel="noopener noreferrer"
+                       class="block bg-bdark hover:bg-panel border-2 border-sok/60 p-3.5 rounded-sm transition-colors">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs sm:text-sm font-bold text-sok">💬 Join the Lang!ley Discord Support Server</span>
+                            <span class="text-[11px] font-bold text-tprim bg-card px-2 py-0.5 rounded-sm border border-blight/30 shrink-0">discord.gg/np4jxeugKM ↗</span>
+                        </div>
+                        <p class="text-[11px] text-tmuted mt-1">
+                            Get live support from the developers, report bugs, suggest features.
+                        </p>
+                    </a>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <a href="https://github.com/IAsukaaI/langley/issues" target="_blank" rel="noopener noreferrer"
+                           class="bg-bdark hover:bg-panel border border-blight/30 p-3 rounded-sm transition-colors flex flex-col justify-between">
+                            <span class="text-xs font-bold text-swarn">🐞 GitHub Issue Tracker ↗</span>
+                            <span class="text-[11px] text-tmuted mt-1">Submit technical bug reports or request new game integrations.</span>
+                        </a>
+                        <a href="mailto:contact@asukaa.de"
+                           class="bg-bdark hover:bg-panel border border-blight/30 p-3 rounded-sm transition-colors flex flex-col justify-between">
+                            <span class="text-xs font-bold text-tprim">✉️ Email Support</span>
+                            <span class="text-[11px] text-tmuted mt-1">contact@asukaa.de — Direct contact for general &amp; Store inquiries.</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="bg-card border-2 border-bdark p-3.5 sm:p-4 rounded-sm space-y-2.5">
+                    <h2 class="text-[11px] font-bold text-swarn uppercase tracking-wider">
+                        COMMON TROUBLESHOOTING GUIDE
+                    </h2>
+                    <div class="space-y-2 text-xs">
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5" open>
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>1. My Discord Rich Presence is not showing up</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <ul class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2 space-y-1.5">
+                                <li>• Make sure the <strong>Discord Desktop App</strong> is running on your PC (Discord in a web browser cannot receive local RPC connections).</li>
+                                <li>• In Discord, go to <strong>User Settings → Activity Privacy</strong> and enable <strong>"Share your detected activity with others"</strong>.</li>
+                                <li>• Enable <strong>Discord Priority Guard</strong> inside Lang!ley if background apps like Medal.tv overwrite your status.</li>
+                            </ul>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>2. A game is running, but Lang!ley doesn't show it</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <ul class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2 space-y-1.5">
+                                <li>• Check that the game is not minimized to the taskbar (Lang!ley ignores minimized games and background launchers by design).</li>
+                                <li>• Verify in Lang!ley's <strong>Settings</strong> that detection for that platform or game is toggled <strong>ON</strong>.</li>
+                            </ul>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>3. Where are my settings stored / How do I reset Lang!ley?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                All configurations and cached assets are stored locally in <code class="text-tprim bg-card px-1 py-0.5 rounded-sm">%APPDATA%\Lang!ley</code> (press <strong class="text-tprim">Win + R</strong>, paste <code class="text-tprim">%APPDATA%\Lang!ley</code>, and hit Enter). Deleting this folder while Lang!ley is closed resets all settings to factory defaults.
+                            </p>
+                        </details>
+
+                        <details class="bg-bdark border border-blight/20 rounded-sm p-2.5">
+                            <summary class="font-bold text-tprim cursor-pointer flex items-center justify-between select-none hover:text-swarn">
+                                <span>4. How do updates work (Microsoft Store vs. Standalone)?</span>
+                                <span class="text-tmuted text-[10px]">▼</span>
+                            </summary>
+                            <p class="mt-2 text-tmuted leading-relaxed border-t border-blight/10 pt-2">
+                                • <strong class="text-tprim">Microsoft Store Edition:</strong> Updates automatically through the Microsoft Store app.<br>
+                                • <strong class="text-tprim">Standalone Edition:</strong> Uses the built-in updater on launch or can be downloaded from GitHub Releases.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+
+                <div class="pt-0.5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                    <a href="https://asukaa.de/langley/"
+                       class="flex-1 bg-bdark hover:bg-card text-sok font-bold text-xs py-2.5 px-4 rounded-sm text-center tracking-wide transition-colors border border-sok/40">
+                        ← Back to Lang!ley
+                    </a>
+                    <a href="https://asukaa.de/langley/privacy"
+                       class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-4 rounded-sm text-center transition-colors border border-bdark">
+                        Privacy Policy
+                    </a>
+                    <a href="https://asukaa.de/langley/LICENSE/LICENSE"
+                       class="bg-card hover:bg-bdark text-tprim font-bold text-xs py-2.5 px-4 rounded-sm text-center transition-colors border border-bdark">
+                        License
+                    </a>
+                </div>
+
+                <footer class="pt-2 border-t border-bdark/60 text-[11px] text-tmuted space-y-1">
+                    <div>© 2026 Lang!ley | Asukaa | asukaa.de</div>
+                    <div class="text-[10px] opacity-80">Not affiliated with Epic, HoYoverse, Valve, Riot, Blizzard, EA, Ubisoft, GOG, Mojang, Roblox, Microsoft, or Discord</div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
